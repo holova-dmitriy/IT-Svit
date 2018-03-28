@@ -12,6 +12,7 @@
 */
 
 Route::group(['prefix' => 'users'], function () {
+    Route::get('search', 'SearchController')->name('api.users.search');
     Route::get('/', 'UsersController@index')->name('api.users.index');
     Route::post('/', 'UsersController@store')->name('api.users.store');
     Route::get('{user}', 'UsersController@show')->name('api.users.show');
