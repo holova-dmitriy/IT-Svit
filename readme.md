@@ -24,3 +24,11 @@ php artisan app:install
 ```
 - Run ```php artisan app:install --root``` with root privileges
 - Reread, update your supervisor configurations and start it
+
+##API description
+1. Get a list of users `/api/users` (GET)
+2. Storing user `/api/users` (POST)
+3. Retrieving user `/api/users/{user}` (GET)
+4. Update user `/api/users/{user}` (PUT)
+5. Deleting user `/api/users/{user}` (DELETE)
+6. Searching user `/api/users/search?query=string&status=1`
